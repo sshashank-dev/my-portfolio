@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+/* This forces the entire browser window to be black */
+html,
+body,
+#root {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    color-scheme: dark;
+}
+
+nav {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+@layer base {
+    html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+}
+
+/* --- MOBILE & ANIMATION ADDITIONS --- */
+
+:root {
+    --vh: 1vh;
+}
+
+/* Fixes the mobile '100vh' jump when address bar hides/shows */
+.min-h-screen-custom {
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+}
+
+/* The Premium Reveal Animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.reveal-text {
+    display: block;
+    animation: slideUp 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+/* Subtle Film Grain (Optional but adds high-end feel) */
+.grain-overlay::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 999;
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
+
+.cursor-line-svg {
+    pointer-events: none;
+    transform: translateZ(0);
+    /* Forces GPU acceleration */
+    will-change: d;
+    /* Tells browser the path 'd' attribute will change */
+}
