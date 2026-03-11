@@ -9,9 +9,9 @@ const About = () => {
     });
 
     useEffect(() => {
-        const apiBase = 'http://localhost:5000/api';
+        // 1. Check if we have an environment variable, otherwise use your Render URL
+        const apiBase = import.meta.env.VITE_API_BASE_URL || 'https://my-portfolio-2cb8.onrender.com';
 
-        // Fetch identity including the resume link from your admin dashboard
         fetch(`${apiBase}/identity`)
             .then(res => res.json())
             .then(data => {
@@ -19,7 +19,6 @@ const About = () => {
                     setIdentity(prev => ({
                         ...prev,
                         ...data,
-                        // If DB is empty, keep the /resume.pdf fallback
                         resumeLink: data.resumeLink || "/resume.pdf"
                     }));
                 }
