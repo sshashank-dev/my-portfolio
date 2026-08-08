@@ -1,155 +1,3 @@
-// import { useEffect, useRef } from "react";
-// import { motion } from "framer-motion";
-// import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-// gsap.registerPlugin(ScrollTrigger);
-
-// const projects = [
-//     {
-//         title: "Cinematic Portfolio",
-//         category: "React / UI Design"
-//     },
-//     {
-//         title: "Task Tracker App",
-//         category: "MERN Stack"
-//     },
-//     {
-//         title: "AI Chat Application",
-//         category: "OpenAI / React"
-//     }
-// ];
-
-// export default function Projects() {
-
-//     const sectionRef = useRef(null);
-
-//     useEffect(() => {
-
-//         gsap.fromTo(
-//             ".project-card",
-//             { y: 100, opacity: 0 },
-//             {
-//                 y: 0,
-//                 opacity: 1,
-//                 duration: 1,
-//                 stagger: 0.3,
-//                 ease: "power3.out",
-//                 scrollTrigger: {
-//                     trigger: sectionRef.current,
-//                     start: "top 90%",
-//                 }
-//             }
-//         );
-
-//     }, []);
-
-//     return (
-//         <section
-//             ref={sectionRef}
-//             className="min-h-screen bg-black text-white px-10 py-32"
-//         >
-
-//             <h2 className="text-5xl font-bold">
-//                 Selected Work
-//             </h2>
-
-//             <div className="grid md:grid-cols-2 gap-16 mt-20">
-
-//                 {projects.map((project, index) => (
-//                     <motion.div
-//                         key={index}
-//                         whileHover={{ scale: 1.05 }}
-//                         className="project-card border border-gray-700 p-10 cursor-pointer hover:border-white transition duration-300"
-//                     >
-
-//                         <h3 className="text-3xl font-semibold">
-//                             {project.title}
-//                         </h3>
-
-//                         <p className="text-gray-400 mt-4">
-//                             {project.category}
-//                         </p>
-
-//                     </motion.div>
-//                 ))}
-
-//             </div>
-
-//         </section>
-//     );
-// }
-
-
-
-
-
-// import { motion } from "framer-motion";
-
-// const projects = [
-//     "https://picsum.photos/600/700?1",
-//     "https://picsum.photos/600/700?2",
-//     "https://picsum.photos/600/700?3",
-//     "https://picsum.photos/600/700?4"
-// ];
-
-// export default function Projects() {
-//     return (
-//         <section className="bg-black text-white min-h-screen px-16 py-32">
-
-//             <div className="grid lg:grid-cols-2 gap-20">
-
-//                 {/* LEFT SIDE IMAGES */}
-//                 <div className="grid grid-cols-2 gap-6">
-
-//                     {projects.map((img, index) => (
-//                         <motion.div
-//                             key={index}
-//                             whileHover={{ scale: 1.05 }}
-//                             className="overflow-hidden"
-//                         >
-//                             <img
-//                                 src={img}
-//                                 className="w-full h-[320px] object-cover hover:scale-110 transition duration-700"
-//                             />
-//                         </motion.div>
-//                     ))}
-
-//                 </div>
-
-//                 {/* RIGHT SIDE TEXT */}
-//                 <div className="flex flex-col justify-start">
-
-//                     <div className="flex justify-between items-start">
-
-//                         <h2 className="text-7xl font-bold leading-none">
-//                             Featured <br /> Projects
-//                         </h2>
-
-//                         <span className="text-6xl font-light">
-//                             10
-//                         </span>
-
-//                     </div>
-
-//                     <button className="mt-16 border border-gray-600 px-10 py-4 w-fit hover:border-white transition">
-//                         View All
-//                     </button>
-
-//                 </div>
-
-//             </div>
-
-//         </section>
-//     );
-// }
-
-
-
-
-
-
-
 import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -159,6 +7,10 @@ import p1 from "../assets/project1.jpg";
 import p2 from "../assets/project2.jpg";
 import p3 from "../assets/project3.jpg";
 import p4 from "../assets/project4.jpg";
+import p5 from "../assets/project5.jpg";
+import p6 from "../assets/project6.jpg";
+import p7 from "../assets/project7.jpg";
+import p8 from "../assets/project8.jpg";
 
 export default function Projects() {
     const [dbProjects, setDbProjects] = useState([]);
@@ -167,8 +19,12 @@ export default function Projects() {
     const staticProjects = [
         { imageUrl: p1, title: "E Commerce App ", projectUrl: "https://e-commerce-omega-tan-94.vercel.app/" },
         { imageUrl: p2, title: "React Ai Tool ", projectUrl: "https://react-ai-tool-six.vercel.app/" },
-        { imageUrl: p3, title: "LEVELS A MUsic App ", projectUrl: "https://music-app-smoky-rho.vercel.app/" },
+        { imageUrl: p3, title: "LEVELS A MUsic App ", projectUrl: "https://levels-silk.vercel.app/" },
         { imageUrl: p4, title: "Flappy Bird ", projectUrl: "https://flappy-bird-react-tan.vercel.app/" },
+        { imageUrl: p5, title: "LE GRAND HORIZON ", projectUrl: "https://le-grand-horizon-lhop.vercel.app/" },
+        { imageUrl: p6, title: "STUDIO INT ", projectUrl: "https://studio-int.vercel.app/" },
+        { imageUrl: p7, title: "TREAVELVERSE ", projectUrl: "https://travelverse-juj6.vercel.app/" },
+        { imageUrl: p8, title: "ASH & ALDER ", projectUrl: "https://ash-and-alder.vercel.app/" },
     ];
 
     // 2. FETCH NEW PROJECTS FROM DASHBOARD
