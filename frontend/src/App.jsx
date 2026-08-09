@@ -1,23 +1,3 @@
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Home from "./pages/Home";
-// import SmoothScroll from "./components/SmoothScroll";
-// import Navbar from "./components/Navbar"; // Import your navbar
-
-// export default function App() {
-//   return (
-//     <BrowserRouter>
-//       {/* 1. The SmoothScroll Logic */}
-//       <SmoothScroll />
-
-//       {/* 2. The Fixed Navbar (Must be z-[100]) */}
-//       <Navbar />
-
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//       </Routes>
-//     </BrowserRouter>
-//   );
-// }
 
 
 
