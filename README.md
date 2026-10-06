@@ -33,6 +33,26 @@ https://my-portfolio-zn4k.vercel.app/
 - MongoDB
 - REST APIs
 
+- ## 🎯 Project Goal
+
+This portfolio was designed to present my development work through a modern interactive experience while also demonstrating full-stack development skills.
+
+The project includes a React frontend, backend API, database integration and a dedicated contact/inquiry workflow.
+
+## 👨‍💻 About Me
+
+I'm a Full-Stack Developer focused on building modern web applications using React.js, Node.js, Express.js and MongoDB.
+
+I'm currently looking for software development internships and opportunities to work on real-world products.
+
+## 🔗 Links
+
+- Portfolio: https://my-portfolio-zn4k.vercel.app/
+- GitHub: https://github.com/sshashank-dev
+- LinkedIn: https://www.linkedin.com/in/shashank-sharma-9b7b2b257/
+
+
+
 ## 📁 Project Structure
 
 ```text
@@ -44,13 +64,4 @@ my-portfolio/
 ├── vercel.json
 └── README.md
 
-Project Goal
-This portfolio was designed to present my development work through a modern interactive experience while also demonstrating full-stack development skills.
-The project includes a React frontend, backend API, database integration and a dedicated contact/inquiry workflow.
-👨‍💻 About Me
-I'm a Full-Stack Developer focused on building modern web applications using React.js, Node.js, Express.js and MongoDB.
-I'm currently looking for software development internships and opportunities to work on real-world products.
-🔗 Links
-- Portfolio: https://my-portfolio-zn4k.vercel.app/
-- GitHub: https://github.com/sshashank-dev
-- LinkedIn: https://www.linkedin.com/in/shashank-sharma-9b7b2b257/
+
