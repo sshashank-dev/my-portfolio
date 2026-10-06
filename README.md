@@ -33,6 +33,20 @@ https://my-portfolio-zn4k.vercel.app/
 - MongoDB
 - REST APIs
 
+- ## 📸 Preview
+
+### Portfolio
+
+![Portfolio Preview](./Screenshot%202026-10-07%20022440.png)
+
+### Projects
+
+![Portfolio Projects](./Screenshot%202026-10-07%20022451.png)
+
+### Contact & Experience
+
+![Portfolio Contact](./Screenshot%202026-10-07%20022504.png)
+
 - ## 🎯 Project Goal
 
 This portfolio was designed to present my development work through a modern interactive experience while also demonstrating full-stack development skills.
